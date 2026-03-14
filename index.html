@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Week in AI — Subscribe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg:       #f5f0e8;
+            --card:     #fdfaf4;
+            --border:   #e2d9c8;
+            --ink:      #1a1612;
+            --muted:    #8a7f72;
+            --accent:   #e8531a;
+            --accent-h: #c9420d;
+            --tag-bg:   #ede8df;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 16px;
+            /* subtle noise texture */
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+        }
+
+        /* ── Decorative sparkles ── */
+        .sparkle {
+            position: fixed;
+            pointer-events: none;
+            opacity: 0.55;
+        }
+        .sparkle svg { display: block; }
+
+        .sp-tl { top: 48px;  left: 60px;  }
+        .sp-tr { top: 72px;  right: 80px; }
+        .sp-bl { bottom: 80px; left: 100px; }
+        .sp-br { bottom: 60px; right: 72px; }
+
+        @media (max-width: 600px) {
+            .sp-tl { top: 20px; left: 16px; }
+            .sp-tr { top: 20px; right: 16px; }
+            .sp-bl, .sp-br { display: none; }
+        }
+
+        /* ── Card ── */
+        .card {
+            background: var(--card);
+            border: 1.5px solid var(--border);
+            border-radius: 20px;
+            padding: 52px 48px 44px;
+            max-width: 520px;
+            width: 100%;
+            text-align: center;
+            box-shadow:
+                0 2px 0 var(--border),
+                0 8px 32px rgba(26,22,18,0.07);
+            animation: rise 0.5s cubic-bezier(.22,.68,0,1.2) both;
+        }
+
+        @keyframes rise {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 560px) {
+            .card { padding: 36px 24px 32px; border-radius: 16px; }
+        }
+
+        /* ── Badge ── */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--tag-bg);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 5px 14px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--muted);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        .badge-dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        /* ── Heading ── */
+        h1 {
+            font-family: 'Instrument Serif', serif;
+            font-size: clamp(38px, 9vw, 54px);
+            line-height: 1.08;
+            color: var(--ink);
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+        h1 em {
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .subtitle {
+            font-size: clamp(14px, 3.5vw, 16px);
+            color: var(--muted);
+            line-height: 1.6;
+            margin-bottom: 32px;
+            max-width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ── Perks ── */
+        .perks {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+        .perk {
+            background: var(--tag-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 12px;
+            font-size: 13px;
+            color: #5a5148;
+            line-height: 1.4;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        .perk-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+        @media (max-width: 420px) {
+            .perks { grid-template-columns: 1fr; }
+        }
+
+        /* ── Form ── */
+        .form-row {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 14px;
+        }
+
+        input[type="email"] {
+            flex: 1;
+            padding: 13px 16px;
+            border: 1.5px solid var(--border);
+            border-radius: 12px;
+            font-size: 15px;
+            font-family: 'DM Sans', sans-serif;
+            background: #fff;
+            color: var(--ink);
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        input[type="email"]::placeholder { color: #b8ae9e; }
+        input[type="email"]:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(232,83,26,0.12);
+        }
+
+        button {
+            padding: 13px 22px;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: 'DM Sans', sans-serif;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background 0.2s, transform 0.1s;
+            box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+        }
+        button:hover:not(:disabled) {
+            background: var(--accent-h);
+            transform: translateY(-1px);
+        }
+        button:active:not(:disabled) { transform: translateY(0); }
+        button:disabled { background: #ccc; cursor: not-allowed; box-shadow: none; }
+
+        @media (max-width: 420px) {
+            .form-row { flex-direction: column; }
+            button { width: 100%; }
+        }
+
+        /* ── Status message ── */
+        .msg {
+            font-size: 14px;
+            min-height: 20px;
+            transition: opacity 0.3s;
+        }
+        .msg.success { color: #16803c; }
+        .msg.error   { color: #dc2626; }
+
+        /* ── Fine print ── */
+        .fine {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #b0a496;
+        }
+
+        /* ── Success state ── */
+        .success-card {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 0;
+        }
+        .success-icon {
+            width: 56px; height: 56px;
+            border-radius: 50%;
+            background: #dcfce7;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 26px;
+        }
+        .success-card h2 {
+            font-family: 'Instrument Serif', serif;
+            font-size: 26px;
+            color: var(--ink);
+        }
+        .success-card p {
+            font-size: 15px;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sparkle decorations (mirroring Gitingest style) -->
+<div class="sparkle sp-tl">
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+        <path d="M22 2 L24.5 19.5 L42 22 L24.5 24.5 L22 42 L19.5 24.5 L2 22 L19.5 19.5 Z" fill="#e8531a"/>
+    </svg>
+</div>
+<div class="sparkle sp-tr">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <path d="M14 1 L15.6 12.4 L27 14 L15.6 15.6 L14 27 L12.4 15.6 L1 14 L12.4 12.4 Z" fill="#1a1612" opacity="0.25"/>
+    </svg>
+</div>
+<div class="sparkle sp-bl">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+        <path d="M11 1 L12.3 9.7 L21 11 L12.3 12.3 L11 21 L9.7 12.3 L1 11 L9.7 9.7 Z" fill="#e8531a" opacity="0.5"/>
+    </svg>
+</div>
+<div class="sparkle sp-br">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M16 2 L18 13 L29 16 L18 19 L16 30 L14 19 L3 16 L14 13 Z" fill="#1a1612" opacity="0.18"/>
+    </svg>
+</div>
+
+<div class="card">
+
+    <!-- Default signup view -->
+    <div id="signup-view">
+        <div class="badge">
+            <span class="badge-dot"></span>
+            Free Weekly Newsletter
+        </div>
+
+        <h1>This Week<br>in <em>AI</em></h1>
+
+        <p class="subtitle">
+            Everything that happened in AI this week — curated, summarised, and delivered to your inbox every Sunday.
+        </p>
+
+        <div class="perks">
+            <div class="perk">
+                <span class="perk-icon">⚡</span>
+                Top stories explained clearly
+            </div>
+            <div class="perk">
+                <span class="perk-icon">🔬</span>
+                Research, no PhD needed
+            </div>
+            <div class="perk">
+                <span class="perk-icon">📦</span>
+                New tools &amp; launches
+            </div>
+            <div class="perk">
+                <span class="perk-icon">☕</span>
+                Done in under 3 minutes
+            </div>
+        </div>
+
+        <!-- 
+            SETUP INSTRUCTIONS:
+            1. Go to https://formspree.io and sign up free
+            2. Create a new form → copy your form ID (looks like "xpwzabcd")
+            3. Replace "YOUR_FORM_ID" below with your actual ID
+        -->
+        <form id="sub-form" action="https://formspree.io/f/xyknpqwp" method="POST">
+            <div class="form-row">
+                <input
+                    type="email"
+                    name="email"
+                    id="email-input"
+                    placeholder="your@email.com"
+                    required
+                    autocomplete="email"
+                />
+                <button type="submit" id="sub-btn">Subscribe →</button>
+            </div>
+            <!-- Hidden field so Formspree emails you with context -->
+            <input type="hidden" name="_subject" value="New AI Newsletter Subscriber" />
+            <input type="hidden" name="_next" value="" />
+        </form>
+
+        <div class="msg" id="msg-box"></div>
+
+        <p class="fine">Every Sunday · No spam · Unsubscribe anytime</p>
+    </div>
+
+    <!-- Success view (shown after subscribe) -->
+    <div class="success-card" id="success-view">
+        <div class="success-icon">🎉</div>
+        <h2>You're in!</h2>
+        <p>Welcome aboard. Your first issue lands<br>this Sunday — keep an eye on your inbox.</p>
+        <p class="fine" style="margin-top:4px;">Check spam if you don't see it.</p>
+    </div>
+
+</div>
+
+<script>
+    const form    = document.getElementById('sub-form');
+    const btn     = document.getElementById('sub-btn');
+    const msgBox  = document.getElementById('msg-box');
+    const signupView  = document.getElementById('signup-view');
+    const successView = document.getElementById('success-view');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const email = document.getElementById('email-input').value.trim();
+        if (!email || !email.includes('@')) {
+            showMsg('Please enter a valid email address.', 'error');
+            return;
+        }
+
+        btn.disabled = true;
+        btn.textContent = 'Subscribing...';
+        msgBox.className = 'msg';
+        msgBox.textContent = '';
+
+        try {
+            const res = await fetch(form.action, {
+                method: 'POST',
+                headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email })
+            });
+
+            if (res.ok) {
+                // Swap to success card
+                signupView.style.display = 'none';
+                successView.style.display = 'flex';
+            } else {
+                const data = await res.json();
+                throw new Error(data.error || 'Something went wrong. Please try again.');
+            }
+        } catch (err) {
+            showMsg(err.message, 'error');
+            btn.disabled = false;
+            btn.textContent = 'Subscribe →';
+        }
+    });
+
+    function showMsg(text, type) {
+        msgBox.textContent = text;
+        msgBox.className = `msg ${type}`;
+    }
+
+    // Enter key support
+    document.getElementById('email-input')
+        .addEventListener('keydown', e => {
+            if (e.key === 'Enter') form.dispatchEvent(new Event('submit'));
+        });
+</script>
+
+</body>
+</html>
