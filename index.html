@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This Week in AI — Subscribe</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
         :root {
             --bg:       #f5f0e8;
             --card:     #fdfaf4;
@@ -20,7 +19,6 @@
             --accent-h: #c9420d;
             --tag-bg:   #ede8df;
         }
-
         body {
             font-family: 'DM Sans', sans-serif;
             background: var(--bg);
@@ -28,32 +26,19 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            padding: 24px 16px;
-            /* subtle noise texture */
+            padding: 24px 16px 64px;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
         }
-
-        /* ── Decorative sparkles ── */
-        .sparkle {
-            position: fixed;
-            pointer-events: none;
-            opacity: 0.55;
-        }
-        .sparkle svg { display: block; }
-
-        .sp-tl { top: 48px;  left: 60px;  }
-        .sp-tr { top: 72px;  right: 80px; }
+        .sparkle { position: fixed; pointer-events: none; opacity: 0.55; }
+        .sp-tl { top: 48px; left: 60px; }
+        .sp-tr { top: 72px; right: 80px; }
         .sp-bl { bottom: 80px; left: 100px; }
         .sp-br { bottom: 60px; right: 72px; }
-
         @media (max-width: 600px) {
             .sp-tl { top: 20px; left: 16px; }
             .sp-tr { top: 20px; right: 16px; }
             .sp-bl, .sp-br { display: none; }
         }
-
-        /* ── Card ── */
         .card {
             background: var(--card);
             border: 1.5px solid var(--border);
@@ -62,22 +47,17 @@
             max-width: 520px;
             width: 100%;
             text-align: center;
-            box-shadow:
-                0 2px 0 var(--border),
-                0 8px 32px rgba(26,22,18,0.07);
+            box-shadow: 0 2px 0 var(--border), 0 8px 32px rgba(26,22,18,0.07);
             animation: rise 0.5s cubic-bezier(.22,.68,0,1.2) both;
+            margin-top: 48px;
         }
-
         @keyframes rise {
             from { opacity: 0; transform: translateY(20px); }
             to   { opacity: 1; transform: translateY(0); }
         }
-
         @media (max-width: 560px) {
-            .card { padding: 36px 24px 32px; border-radius: 16px; }
+            .card { padding: 36px 24px 32px; border-radius: 16px; margin-top: 24px; }
         }
-
-        /* ── Badge ── */
         .badge {
             display: inline-flex;
             align-items: center;
@@ -101,10 +81,8 @@
         }
         @keyframes pulse {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0.4; }
+            50%       { opacity: 0.4; }
         }
-
-        /* ── Heading ── */
         h1 {
             font-family: 'Instrument Serif', serif;
             font-size: clamp(38px, 9vw, 54px);
@@ -113,11 +91,7 @@
             margin-bottom: 8px;
             letter-spacing: -0.02em;
         }
-        h1 em {
-            font-style: italic;
-            color: var(--accent);
-        }
-
+        h1 em { font-style: italic; color: var(--accent); }
         .subtitle {
             font-size: clamp(14px, 3.5vw, 16px);
             color: var(--muted);
@@ -127,8 +101,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-
-        /* ── Perks ── */
         .perks {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -149,18 +121,8 @@
             gap: 8px;
         }
         .perk-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
-
-        @media (max-width: 420px) {
-            .perks { grid-template-columns: 1fr; }
-        }
-
-        /* ── Form ── */
-        .form-row {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 14px;
-        }
-
+        @media (max-width: 420px) { .perks { grid-template-columns: 1fr; } }
+        .form-row { display: flex; gap: 8px; margin-bottom: 14px; }
         input[type="email"] {
             flex: 1;
             padding: 13px 16px;
@@ -178,7 +140,6 @@
             border-color: var(--accent);
             box-shadow: 0 0 0 3px rgba(232,83,26,0.12);
         }
-
         button {
             padding: 13px 22px;
             background: var(--accent);
@@ -193,35 +154,14 @@
             transition: background 0.2s, transform 0.1s;
             box-shadow: 0 2px 0 rgba(0,0,0,0.15);
         }
-        button:hover:not(:disabled) {
-            background: var(--accent-h);
-            transform: translateY(-1px);
-        }
+        button:hover:not(:disabled) { background: var(--accent-h); transform: translateY(-1px); }
         button:active:not(:disabled) { transform: translateY(0); }
         button:disabled { background: #ccc; cursor: not-allowed; box-shadow: none; }
-
-        @media (max-width: 420px) {
-            .form-row { flex-direction: column; }
-            button { width: 100%; }
-        }
-
-        /* ── Status message ── */
-        .msg {
-            font-size: 14px;
-            min-height: 20px;
-            transition: opacity 0.3s;
-        }
+        @media (max-width: 420px) { .form-row { flex-direction: column; } button { width: 100%; } }
+        .msg { font-size: 14px; min-height: 20px; }
         .msg.success { color: #16803c; }
         .msg.error   { color: #dc2626; }
-
-        /* ── Fine print ── */
-        .fine {
-            margin-top: 20px;
-            font-size: 12px;
-            color: #b0a496;
-        }
-
-        /* ── Success state ── */
+        .fine { margin-top: 20px; font-size: 12px; color: #b0a496; }
         .success-card {
             display: none;
             flex-direction: column;
@@ -241,16 +181,107 @@
             font-size: 26px;
             color: var(--ink);
         }
-        .success-card p {
-            font-size: 15px;
-            color: var(--muted);
+        .success-card p { font-size: 15px; color: var(--muted); line-height: 1.5; }
+
+        /* ── Archive ── */
+        .archive {
+            max-width: 520px;
+            width: 100%;
+            margin-top: 48px;
+            animation: rise 0.6s 0.15s cubic-bezier(.22,.68,0,1.2) both;
+        }
+        .archive-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .archive-title {
+            font-family: 'Instrument Serif', serif;
+            font-size: 22px;
+            color: var(--ink);
+            white-space: nowrap;
+        }
+        .archive-line { flex: 1; height: 1px; background: var(--border); }
+        .issue-card {
+            background: var(--card);
+            border: 1.5px solid var(--border);
+            border-radius: 14px;
+            padding: 20px 22px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            text-decoration: none;
+            transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+            box-shadow: 0 1px 0 var(--border);
+        }
+        .issue-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 4px 16px rgba(232,83,26,0.1);
+            transform: translateY(-2px);
+        }
+        .issue-left { flex: 1; text-align: left; }
+        .issue-date {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+        .issue-preview {
+            font-size: 14px;
+            color: #5a5148;
             line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .issue-arrow {
+            color: var(--muted);
+            font-size: 18px;
+            flex-shrink: 0;
+            transition: color 0.2s, transform 0.2s;
+        }
+        .issue-card:hover .issue-arrow { color: var(--accent); transform: translateX(3px); }
+        .archive-empty {
+            background: var(--card);
+            border: 1.5px dashed var(--border);
+            border-radius: 14px;
+            padding: 32px 24px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .skeleton {
+            background: var(--card);
+            border: 1.5px solid var(--border);
+            border-radius: 14px;
+            padding: 20px 22px;
+            margin-bottom: 12px;
+        }
+        .skel-line {
+            background: var(--tag-bg);
+            border-radius: 4px;
+            height: 12px;
+            margin-bottom: 8px;
+            animation: shimmer 1.4s infinite;
+        }
+        .skel-line.short { width: 40%; }
+        .skel-line.long  { width: 85%; }
+        .skel-line.med   { width: 65%; }
+        @keyframes shimmer {
+            0%, 100% { opacity: 0.6; }
+            50%       { opacity: 1; }
         }
     </style>
 </head>
 <body>
 
-<!-- Sparkle decorations (mirroring Gitingest style) -->
 <div class="sparkle sp-tl">
     <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
         <path d="M22 2 L24.5 19.5 L42 22 L24.5 24.5 L22 42 L19.5 24.5 L2 22 L19.5 19.5 Z" fill="#e8531a"/>
@@ -272,113 +303,85 @@
     </svg>
 </div>
 
+<!-- Signup Card -->
 <div class="card">
-
-    <!-- Default signup view -->
     <div id="signup-view">
-        <div class="badge">
-            <span class="badge-dot"></span>
-            Free Weekly Newsletter
-        </div>
-
+        <div class="badge"><span class="badge-dot"></span>Free Weekly Newsletter</div>
         <h1>This Week<br>in <em>AI</em></h1>
-
-        <p class="subtitle">
-            Everything that happened in AI this week — curated, summarised, and delivered to your inbox every Sunday.
-        </p>
-
+        <p class="subtitle">Everything that happened in AI this week — curated, summarised, and delivered every Sunday.</p>
         <div class="perks">
-            <div class="perk">
-                <span class="perk-icon">⚡</span>
-                Top stories explained clearly
-            </div>
-            <div class="perk">
-                <span class="perk-icon">🔬</span>
-                Important papers &amp; breakthrough, explained simply
-            </div>
-            <div class="perk">
-                <span class="perk-icon">🚀</span>
-                What hackers &amp; YC builders are shipping
-            </div>
-            <div class="perk">
-                <span class="perk-icon">☕</span>
-                Everything important in under 3 minutes
-            </div>
+            <div class="perk"><span class="perk-icon">⚡</span>Top stories explained clearly</div>
+            <div class="perk"><span class="perk-icon">🔬</span>Important papers &amp; breakthrough, explained simply</div>
+            <div class="perk"><span class="perk-icon">📦</span>What hackers &amp; YC builders are shipping</div>
+            <div class="perk"><span class="perk-icon">☕</span>Everything important in under 3 minutes</div>
         </div>
-
-        <!-- 
-            SETUP INSTRUCTIONS:
-            1. Go to https://formspree.io and sign up free
-            2. Create a new form → copy your form ID (looks like "xpwzabcd")
-            3. Replace "YOUR_FORM_ID" below with your actual ID
-        -->
-        <form id="sub-form" action="https://formspree.io/f/xyknpqwp" method="POST">
+        <form id="sub-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <div class="form-row">
-                <input
-                    type="email"
-                    name="email"
-                    id="email-input"
-                    placeholder="your@email.com"
-                    required
-                    autocomplete="email"
-                />
+                <input type="email" name="email" id="email-input" placeholder="your@email.com" required autocomplete="email"/>
                 <button type="submit" id="sub-btn">Subscribe →</button>
             </div>
-            <!-- Hidden field so Formspree emails you with context -->
-            <input type="hidden" name="_subject" value="New AI Newsletter Subscriber" />
-            <input type="hidden" name="_next" value="" />
+            <input type="hidden" name="_subject" value="New AI Newsletter Subscriber"/>
         </form>
-
         <div class="msg" id="msg-box"></div>
-
         <p class="fine">Every Sunday · No spam · Unsubscribe anytime</p>
     </div>
-
-    <!-- Success view (shown after subscribe) -->
     <div class="success-card" id="success-view">
         <div class="success-icon">🎉</div>
         <h2>You're in!</h2>
         <p>Welcome aboard. Your first issue lands<br>this Sunday — keep an eye on your inbox.</p>
         <p class="fine" style="margin-top:4px;">Check spam if you don't see it.</p>
     </div>
+</div>
 
+<!-- Past Issues -->
+<div class="archive">
+    <div class="archive-header">
+        <span class="archive-title">Past Issues</span>
+        <div class="archive-line"></div>
+    </div>
+    <div id="archive-list">
+        <div class="skeleton" id="skel-1">
+            <div class="skel-line short"></div>
+            <div class="skel-line long"></div>
+            <div class="skel-line med"></div>
+        </div>
+        <div class="skeleton" id="skel-2">
+            <div class="skel-line short"></div>
+            <div class="skel-line long"></div>
+            <div class="skel-line med"></div>
+        </div>
+    </div>
 </div>
 
 <script>
-    const form    = document.getElementById('sub-form');
-    const btn     = document.getElementById('sub-btn');
-    const msgBox  = document.getElementById('msg-box');
-    const signupView  = document.getElementById('signup-view');
-    const successView = document.getElementById('success-view');
+    // Subscription form
+    const form = document.getElementById('sub-form');
+    const btn  = document.getElementById('sub-btn');
+    const msgBox = document.getElementById('msg-box');
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
-
         const email = document.getElementById('email-input').value.trim();
         if (!email || !email.includes('@')) {
             showMsg('Please enter a valid email address.', 'error');
             return;
         }
-
         btn.disabled = true;
         btn.textContent = 'Subscribing...';
         msgBox.className = 'msg';
         msgBox.textContent = '';
-
         try {
             const res = await fetch(form.action, {
                 method: 'POST',
                 headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email })
             });
-
             if (res.ok) {
-                // Swap to success card
-                signupView.style.display = 'none';
-                successView.style.display = 'flex';
+                document.getElementById('signup-view').style.display = 'none';
+                document.getElementById('success-view').style.display = 'flex';
             } else {
                 const data = await res.json();
-                throw new Error(data.error || 'Something went wrong. Please try again.');
+                throw new Error(data.error || 'Something went wrong.');
             }
         } catch (err) {
             showMsg(err.message, 'error');
@@ -387,17 +390,45 @@
         }
     });
 
+    document.getElementById('email-input')
+        .addEventListener('keydown', e => e.key === 'Enter' && form.dispatchEvent(new Event('submit')));
+
     function showMsg(text, type) {
         msgBox.textContent = text;
-        msgBox.className = `msg ${type}`;
+        msgBox.className = 'msg ' + type;
     }
 
-    // Enter key support
-    document.getElementById('email-input')
-        .addEventListener('keydown', e => {
-            if (e.key === 'Enter') form.dispatchEvent(new Event('submit'));
-        });
-</script>
+    // Archive loader
+    async function loadArchive() {
+        const list = document.getElementById('archive-list');
+        try {
+            const res = await fetch('newsletters/index.json');
+            document.getElementById('skel-1')?.remove();
+            document.getElementById('skel-2')?.remove();
+            if (!res.ok) throw new Error('none');
+            const issues = await res.json();
+            if (!issues || issues.length === 0) throw new Error('none');
+            issues.forEach(issue => {
+                const a = document.createElement('a');
+                a.className = 'issue-card';
+                a.href = 'newsletters/' + issue.file;
+                a.innerHTML =
+                    '<div class="issue-left">' +
+                        '<div class="issue-date">' + issue.date + '</div>' +
+                        '<div class="issue-preview">' + issue.preview + '</div>' +
+                    '</div>' +
+                    '<div class="issue-arrow">→</div>';
+                list.appendChild(a);
+            });
+        } catch (_) {
+            document.getElementById('skel-1')?.remove();
+            document.getElementById('skel-2')?.remove();
+            list.innerHTML =
+                '<div class="archive-empty">🗞️ No past issues yet — the first one drops this Sunday!</div>';
+        }
+    }
 
+    loadArchive();
+</script>
 </body>
 </html>
