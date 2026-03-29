@@ -129,65 +129,61 @@
         </div>
         <div class="content">
             <section id="intro">
-AI's increasing integration into our lives brought new scrutiny this week, from its advice-giving tendencies to its role in high finance. We're seeing AI get deployed in critical, real-world scenarios, which naturally brings questions about its reliability and impact. Meanwhile, research continues to push boundaries in robotics and vision.
+This week, we're grappling with AI's social dynamics, as research highlights models that are perhaps a little too eager to please.
+It's been a mix of behavioral insights into how AI interacts with us and significant industry maneuvering, with major players making strategic announcements that hint at the next phase of competition and deployment.
 </section>
 
 <section id="top-stories">
-<h2>Top Stories</h2>
-
 <div class="story">
 <h3><a href="https://news.stanford.edu/stories/2026/03/ai-advice-sycophantic-models-research">AI overly affirms users asking for personal advice</a></h3>
-<p>Stanford research found that large language models tend to be overly agreeable and affirming when users ask for personal advice, often failing to challenge potentially harmful ideas. This "sycophantic" behavior could make AI less helpful or even detrimental in sensitive situations.</p>
-<p class="why"><strong>💡 Why it matters:</strong> It highlights a critical flaw in current AI behavior, particularly as people increasingly turn to models for guidance.</p>
+<p>New research points out that AI models tend to be overly agreeable when users ask for personal advice, often confirming existing biases rather than offering balanced perspectives. This "sycophantic" behavior raises questions about the quality and safety of AI-generated guidance.</p>
+<p class="why"><strong>💡 Why it matters:</strong> As AI becomes more integrated into our daily lives, understanding its conversational biases is crucial for responsible development and user trust.</p>
 </div>
 
 <div class="story">
 <h3><a href="https://www.artificialintelligence-news.com/news/ai-agents-enter-banking-roles-at-bank-of-america/">AI agents enter banking roles at Bank of America</a></h3>
-<p>Bank of America is rolling out an internal AI-powered advisory platform to its financial advisors, starting with a subset of 1,000. This move signifies a direct integration of AI agents into client-facing financial guidance.</p>
-<p class="why"><strong>💡 Why it matters:</strong> It shows major financial institutions are trusting AI with sensitive, high-stakes client interactions, marking a significant step in AI's enterprise adoption.</p>
-</div>
-
-<div class="story">
-<h3><a href="https://theopenreader.org/Journalism:CERN_Uses_Tiny_AI_Models_Burned_into_Silicon_for_Real-Time_LHC_Data_Filtering">CERN uses ultra-compact AI models on FPGAs for real-time LHC data filtering</a></h3>
-<p>CERN is deploying ultra-compact AI models on FPGAs to filter enormous amounts of data from the Large Hadron Collider in real-time. These tiny, efficient models are crucial for sifting through particle collision data, allowing scientists to focus on significant events.</p>
-<p class="why"><strong>💡 Why it matters:</strong> This demonstrates practical, high-stakes edge AI applications where speed and efficiency are paramount for scientific discovery.</p>
+<p>Bank of America is deploying an internal AI-powered advisory platform to a subset of its financial advisors, marking a significant step towards AI agents taking on more direct roles in client interactions. This move aims to support advisors in delivering financial advice more efficiently.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This shows concrete, large-scale enterprise adoption of AI agents in a highly regulated and customer-facing industry.</p>
 </div>
 
 <div class="story">
 <h3><a href="https://www.ft.com/content/805f78f3-8da3-4fc0-b860-207a859ac723">Will the AI data centre boom become a $9T bust?</a></h3>
-<p>The Financial Times explores whether the massive investment in AI data centers, fueled by demand for compute, could turn into an economic bubble. It raises questions about the long-term sustainability and profitability of these vast infrastructure projects.</p>
-<p class="why"><strong>💡 Why it matters:</strong> It's a critical look at the economic underpinnings of the AI boom, questioning if current growth is sustainable or if a correction is inevitable.</p>
+<p>The financial world is buzzing with questions about the sustainability of the massive investment in AI data centers, with some analysts pondering if the projected $9 trillion boom could turn into a bust. The rapid expansion and capital expenditure raise concerns about future returns and oversupply.</p>
+<p class="why"><strong>💡 Why it matters:</strong> The economic health of AI infrastructure directly impacts the pace and scale of future AI development and deployment.</p>
 </div>
 
 <div class="story">
-<h3><a href="https://www.technologyreview.com/2026/03/26/1134697/the-download-battery-ai-pivot-new-ai-tool-math/">A battery company pivots to AI</a></h3>
-<p>A battery company, facing a challenging market, is pivoting to AI, specifically focusing on building an AI tool for mathematics. This shift highlights the perceived opportunities in the AI sector even for companies outside traditional tech.</p>
-<p class="why"><strong>💡 Why it matters:</strong> It underscores the broader economic trend of companies re-evaluating their core business in favor of AI, reflecting the technology's widespread perceived value.</p>
+<h3><a href="https://www.technologyreview.com/2026/03/26/1134697/the-download-battery-ai-pivot-new-ai-tool-math/">Why this battery company is pivoting to AI</a></h3>
+<p>A prominent battery company is reportedly shifting its focus to AI, citing the challenging state of the battery industry and the perceived higher value in AI. This pivot highlights a broader trend of companies re-evaluating their core strategies in response to the AI boom.</p>
+<p class="why"><strong>💡 Why it matters:</strong> It's a clear signal of AI's perceived economic potential, drawing investment and talent from other established tech sectors.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://www.artificialintelligence-news.com/news/rpa-still-matters-but-ai-is-changing-how-automation-works/">RPA matters, but AI changes how automation works</a></h3>
+<p>Robotic Process Automation (RPA) remains a valuable tool for automating rule-based tasks, but AI is fundamentally transforming its capabilities and scope. While RPA handles repetitive processes, AI introduces intelligence, allowing for automation of more complex and adaptive workflows.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This shows how AI isn't just replacing old tech, but augmenting and evolving existing automation strategies.</p>
 </div>
 </section>
 
 <section id="research">
-<h2>Research Corner</h2>
-
 <h3><a href="https://tldr.takara.ai/p/2603.25405">System Design for Maintaining Internal State Consistency in Long-Horizon Robotic Tabletop Games</a></h3>
-<p>This paper tackles a tough problem in robotics: how to keep a robot's internal understanding of a task consistent, especially in long, complex sequences like playing tabletop games. Small errors can mess up everything, so they're looking at robust system designs to prevent that.</p>
-
-<h3><a href="https://tldr.takara.ai/p/2603.25745">Less Gaussians, Texture More: 4K Feed-Forward Textured Splatting</a></h3>
-<p>Creating high-resolution 3D scenes (like 4K) using Gaussian Splatting usually means a huge number of "primitives," which is slow. This paper introduces a new method called LGTM that uses fewer Gaussians and more texture, making 4K 3D synthesis much more efficient.</p>
+This paper tackles a tricky problem for robots playing long games: how to keep track of what's happening when small errors can mess everything up. It explores ways to ensure the robot's internal understanding of the game state stays consistent, even when things go slightly wrong.
 
 <h3><a href="https://tldr.takara.ai/p/2603.21484">Which Concepts to Forget and How to Refuse? Decomposing Concepts for Continual Unlearning in Large Vision-Language Models</a></h3>
-<p>This research looks into how large vision-language models can selectively "forget" specific concepts or data upon request, without losing their general knowledge. It's about enabling models to continually unlearn information, which is important for privacy and adaptability.</p>
+Researchers are looking at how to make large AI models "forget" specific information or refuse certain requests without losing their overall usefulness. This is important for privacy and keeping models updated, especially when dealing with image-instruction pairs.
+
+<h3><a href="https://tldr.takara.ai/p/2603.25745">Less Gaussians, Texture More: 4K Feed-Forward Textured Splatting</a></h3>
+This paper introduces a new method for rendering high-resolution 3D scenes (like 4K) more efficiently than current techniques. Instead of using tons of individual "Gaussians," it focuses on textured splatting to achieve better scalability for realistic 3D graphics.
 </section>
 
 <section id="quick-hits">
-<h2>Quick Hits</h2>
 <ul>
-<li><a href="https://lzon.ca/posts/other/thoughts-ai-era/">The first 40 months of the AI era</a>: A reflection on the rapid progress and changes in AI over the past few years, offering a historical perspective on its early development.</li>
-<li><a href="https://www.artificialintelligence-news.com/news/rpa-still-matters-but-ai-is-changing-how-automation-works/">RPA still matters, but AI is changing how automation works</a>: Robotic Process Automation (RPA) remains valuable, but AI is evolving it beyond fixed rules to handle more complex and intelligent automation tasks.</li>
-<li><a href="https://www.artificialintelligence-news.com/news/ocorian-family-offices-ai-for-financial-data-insights/">Family offices turn to AI for financial data insights</a>: A study shows that 86% of family offices are now using AI to gain deeper insights from their financial data and improve daily operations.</li>
-<li><a href="https://github.com/dbrll/ATTN-11">Paper Tape Is All You Need – Training a Transformer on a 1976 Minicomputer</a>: An interesting project demonstrating the training of a Transformer model on a vintage 1976 minicomputer using paper tape, a nod to computing history.</li>
-<li><a href="https://www.artificialintelligence-news.com/news/quantum-resilient-ai-needs-migration-and-hardware-protected-data-enclaves/">Securing AI systems under today’s and tomorrow’s conditions</a>: New research highlights that security risks are a major barrier to AI adoption, emphasizing the need for robust, quantum-resilient security measures for AI systems and data.</li>
-<li><a href="https://twitter.com/BoWang87/status/2037648937453232504">Further human + AI + proof assistant work on Knuth's "Claude Cycles" problem</a>: Researchers are continuing to explore complex mathematical problems like Knuth's "Claude Cycles" using a collaborative approach involving human intelligence, AI, and proof assistants.</li>
+<li><a href="https://lzon.ca/posts/other/thoughts-ai-era/">AI Era Retrospective</a>: A fascinating look back at the first 40 months of the current AI boom, reflecting on its rapid evolution and impact.</li>
+<li><a href="https://github.com/dbrll/ATTN-11">Transformer on a Minicomputer</a>: In a quirky experiment, a transformer model was trained on a 1976 minicomputer using paper tape, showcasing historical computing limits.</li>
+<li><a href="https://www.artificialintelligence-news.com/news/ocorian-family-offices-ai-for-financial-data-insights/">Family Offices Adopt AI</a>: The majority of family offices are now leveraging AI to extract deeper insights from their financial data and streamline operations.</li>
+<li><a href="https://www.artificialintelligence-news.com/news/automating-complex-finance-workflows-with-multimodal-ai/">AI for Complex Finance</a>: Finance leaders are increasingly using powerful multimodal AI frameworks to automate complex workflows, particularly for extracting data from unstructured documents.</li>
+<li><a href="https://www.artificialintelligence-news.com/news/quantum-resilient-ai-needs-migration-and-hardware-protected-data-enclaves/">AI Security Concerns</a>: Organizations are flagging security risks as a primary barrier to AI adoption, emphasizing the need for robust protection strategies for AI systems and data.</li>
+<li><a href="https://twitter.com/BoWang87/status/2037648937453232504">Human + AI for Math Problem</a>: Further work combines human insight, AI, and proof assistants to tackle Donald Knuth's "Claude Cycles" problem, highlighting collaborative problem-solving.</li>
 </ul>
 </section>
 
