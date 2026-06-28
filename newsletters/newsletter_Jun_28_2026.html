@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Week in AI — Jun 28, 2026</title>
+    <!-- Back link -->
+    <style>
+        .back-bar {
+            background: #1a1612;
+            padding: 12px 24px;
+            text-align: center;
+        }
+        .back-bar a {
+            color: #e8531a;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-bar a:hover { text-decoration: underline; }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f9fafb;
+            color: #111827;
+            padding: 32px 16px;
+        }
+        .wrapper {
+            max-width: 660px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+        .banner {
+            background: #111827;
+            color: #ffffff;
+            padding: 28px 24px;
+        }
+        .banner h1 {
+            font-size: clamp(20px, 5vw, 26px);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .banner .date {
+            font-size: clamp(12px, 3vw, 14px);
+            color: #9ca3af;
+            margin-top: 4px;
+        }
+        .content { padding: 28px 24px; }
+        section { margin-bottom: 36px; }
+        section h2 {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #6b7280;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        section h3 {
+            font-size: clamp(16px, 4vw, 17px);
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        section h3 a { color: #111827; text-decoration: none; }
+        section h3 a:hover { text-decoration: underline; }
+        p {
+            font-size: clamp(15px, 3.5vw, 16px);
+            line-height: 1.7;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+        p.why {
+            font-size: clamp(14px, 3.2vw, 15px);
+            color: #6b7280;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-top: 8px;
+            border-top: 1px dashed #e5e7eb;
+        }
+        .story {
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .story:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        ul { list-style: none; padding: 0; }
+        ul li {
+            font-size: clamp(14px, 3.5vw, 15px);
+            line-height: 1.7;
+            color: #374151;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        ul li:last-child { border-bottom: none; }
+        ul li a { color: #2563eb; text-decoration: none; font-weight: 600; }
+        ul li a:hover { text-decoration: underline; }
+        .footer-section {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 20px 24px;
+            font-size: clamp(12px, 3vw, 13px);
+            color: #9ca3af;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            body { padding: 0; }
+            .wrapper { border-radius: 0; }
+            .banner { padding: 20px 16px; }
+            .content { padding: 20px 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="back-bar">
+        <a href="../index.html">← Back to This Week in AI</a>
+    </div>
+    <div class="wrapper">
+        <div class="banner">
+            <h1>🤖 This Week in AI</h1>
+            <div class="date">Jun 28, 2026</div>
+        </div>
+        <div class="content">
+            <section id="intro">
+This week, the AI world got a tangible boost in performance and a dose of reality. We saw significant advancements in making large language models run faster, alongside a clearer picture of AI's expanding — and sometimes challenging — role in industries from chip design to retail. It was a week that highlighted both the impressive technical progress and the complex human-machine dynamics emerging in the real world.
+</section>
+
+<section id="top-stories">
+<div class="story">
+<h3><a href="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf">DSpark: Speculative decoding accelerates LLM inference [pdf]</a></h3>
+<p>A new technique called DSpark significantly speeds up how large language models generate text. It does this by "speculative decoding," essentially predicting the next few words and then quickly verifying them, which can make LLMs much more responsive.</p>
+<p class="why"><strong>💡 Why it matters:</strong> Faster LLM inference means more efficient and responsive AI applications, making them more practical for everyday use.</p>
+</div>
+<div class="story">
+<h3><a href="https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/">Asian AI startups launch Mythos-like models</a></h3>
+<p>Amidst an export ban on Anthropic's models, several Asian AI startups have begun releasing their own versions of "Mythos-like" language models. This move signals a growing regional competition and a push for local AI development.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This marks a significant shift in the global AI landscape, potentially fostering new innovation hubs outside traditional Western dominance.</p>
+</div>
+<div class="story">
+<h3><a href="https://spectrum.ieee.org/ai-radio-chip-design">AI learns the “dark art” of RFIC design</a></h3>
+<p>AI is now tackling the incredibly complex and specialized field of Radio Frequency Integrated Circuit (RFIC) design, a domain traditionally considered a "dark art" due to its intricate nature. This shows AI moving into highly technical engineering tasks.</p>
+<p class="why"><strong>💡 Why it matters:</strong> AI's ability to master such specialized engineering could drastically accelerate hardware development and push the boundaries of what's possible in electronics.</p>
+</div>
+<div class="story">
+<h3><a href="https://www.the-independent.com/tech/ford-ai-automation-human-workers-b3003787.html">Ford hired AI and sacked humans. It backfired badly</a></h3>
+<p>Ford's attempt to automate certain roles with AI, leading to human layoffs, reportedly backfired. The article suggests the AI wasn't up to the task, causing significant operational issues for the company.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This serves as a potent reminder that AI implementation needs careful planning and human oversight, and automation isn't a silver bullet for every job.</p>
+</div>
+<div class="story">
+<h3><a href="https://www.technologyreview.com/2026/06/25/1139696/ibm-unveils-sub1nm-chip/">IBM has unveiled chip technology that could help extend Moore’s Law another decade</a></h3>
+<p>IBM has announced a prototype chip that packs an unprecedented 100 billion transistors onto a tiny area, doubling previous densities. This technological leap could extend the lifespan of Moore's Law, meaning faster, more energy-efficient computing for years to come.</p>
+<p class="why"><strong>💡 Why it matters:</strong> Continued advancements in chip technology are fundamental for the sustained growth and capability of AI, especially as models become larger and more complex.</p>
+</div>
+</section>
+
+<section id="research">
+<h3><a href="https://tldr.takara.ai/p/2606.23633">AI Exposure Scores: what they measure, what they miss, and what comes next</a></h3>
+<p>This paper looks at how we measure AI's impact on jobs, specifically the "GPTs are GPTs" scores. It discusses what these scores actually capture about tasks AI can assist with, what they might be missing, and what we should consider next when evaluating AI's effect on the workforce.</p>
+<h3><a href="https://tldr.takara.ai/p/2606.24758">CANDLE: Character-level Arabic Noise Deduplication using Lightweight Encoder</a></h3>
+<p>CANDLE is a new, lightweight system designed to clean up Arabic text, specifically by handling repeated characters. It helps distinguish between correctly spelled words with character repetition and informal "elongation" often found in social media.</p>
+<h3><a href="https://tldr.takara.ai/p/2606.22618">Federated Learning for Global Carbon Emission Forecasting: A Hybrid Time-Series Approach with Statistical and Neural Models</a></h3>
+<p>This research proposes using federated learning – a way to train AI models on decentralized data without moving it – to forecast global carbon emissions. It combines statistical and neural network models to create more accurate predictions while protecting data privacy.</p>
+</section>
+
+<section id="quick-hits">
+<ul>
+<li><a href="https://github.com/itsthelore/wayfinder-router">Wayfinder Router</a>: A new open-source tool helps developers intelligently route queries between local and cloud-hosted LLMs, optimizing for cost and performance.</li>
+<li><a href="https://jayacunzo.com/blog/your-move-chief">AI "Slop" Response</a>: A commentary piece used a Robin Williams quote to highlight concerns about the increasing volume of low-quality, AI-generated content online.</li>
+<li><a href="https://www.technologyreview.com/2026/06/25/1137848/repositioning-retail-for-the-ai-era/">AI in Retail Operations</a>: AI is quietly transforming retail, not just with flashy chatbots, but by optimizing behind-the-scenes decisions like product surfacing and inventory management.</li>
+<li><a href="https://www.technologyreview.com/2026/06/26/1139780/the-download-heatwaves-brain-health-openai-restrictions/">OpenAI Restrictions</a>: A brief mention indicates that OpenAI is facing "unprecedented restrictions," though the nature of these restrictions isn't detailed.</li>
+</ul>
+</section>
+
+<section id="footer">
+See you next Sunday ✌️
+</section>
+        </div>
+        <div class="footer-section">
+            Built by a curious human and a few neural networks 🔗
+            <div style="margin-top: 8px; font-size: 11px; color: #d1d5db;">
+                ⚠️ AI can make mistakes — please double-check important information.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
