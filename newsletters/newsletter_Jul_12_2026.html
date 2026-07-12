@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Week in AI — Jul 12, 2026</title>
+    <!-- Back link -->
+    <style>
+        .back-bar {
+            background: #1a1612;
+            padding: 12px 24px;
+            text-align: center;
+        }
+        .back-bar a {
+            color: #e8531a;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-bar a:hover { text-decoration: underline; }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f9fafb;
+            color: #111827;
+            padding: 32px 16px;
+        }
+        .wrapper {
+            max-width: 660px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+        .banner {
+            background: #111827;
+            color: #ffffff;
+            padding: 28px 24px;
+        }
+        .banner h1 {
+            font-size: clamp(20px, 5vw, 26px);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .banner .date {
+            font-size: clamp(12px, 3vw, 14px);
+            color: #9ca3af;
+            margin-top: 4px;
+        }
+        .content { padding: 28px 24px; }
+        section { margin-bottom: 36px; }
+        section h2 {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #6b7280;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        section h3 {
+            font-size: clamp(16px, 4vw, 17px);
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        section h3 a { color: #111827; text-decoration: none; }
+        section h3 a:hover { text-decoration: underline; }
+        p {
+            font-size: clamp(15px, 3.5vw, 16px);
+            line-height: 1.7;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+        p.why {
+            font-size: clamp(14px, 3.2vw, 15px);
+            color: #6b7280;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-top: 8px;
+            border-top: 1px dashed #e5e7eb;
+        }
+        .story {
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .story:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        ul { list-style: none; padding: 0; }
+        ul li {
+            font-size: clamp(14px, 3.5vw, 15px);
+            line-height: 1.7;
+            color: #374151;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        ul li:last-child { border-bottom: none; }
+        ul li a { color: #2563eb; text-decoration: none; font-weight: 600; }
+        ul li a:hover { text-decoration: underline; }
+        .footer-section {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 20px 24px;
+            font-size: clamp(12px, 3vw, 13px);
+            color: #9ca3af;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            body { padding: 0; }
+            .wrapper { border-radius: 0; }
+            .banner { padding: 20px 16px; }
+            .content { padding: 20px 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="back-bar">
+        <a href="../index.html">← Back to This Week in AI</a>
+    </div>
+    <div class="wrapper">
+        <div class="banner">
+            <h1>🤖 This Week in AI</h1>
+            <div class="date">Jul 12, 2026</div>
+        </div>
+        <div class="content">
+            <section id="intro">
+This week, we got a fascinating glimpse inside the mind of a large language model, alongside a flurry of practical AI applications making real-world impact. It's been a mix of deep research peering into AI's black box and concrete deployments showing how AI is already changing industries from pharma to consumer goods.
+</section>
+
+<section id="top-stories">
+<h2>Top Stories</h2>
+
+<div class="story">
+<h3><a href="https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/">Anthropic found a hidden space where Claude puzzles over concepts</a></h3>
+<p>Researchers at Anthropic developed a new technique to observe what's happening inside Claude as it processes information, finding specific "circuits" or "concepts" it uses to understand and respond. They found that Claude doesn't just process text; it creates internal representations for abstract ideas like "love" or "anger."</p>
+<p class="why"><strong>💡 Why it matters:</strong> This is a significant step towards understanding how LLMs truly work, moving beyond viewing them as black boxes, which is crucial for safety and reliability.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://www.artificialintelligence-news.com/news/aws-graphrag-deployment-cuts-drug-research-cycles-by-87/">AWS GraphRAG deployment cuts drug research cycles by 87%</a></h3>
+<p>An AWS GraphRAG (Retrieval Augmented Generation) system dramatically accelerated drug research and development in a pharmaceutical setting, reducing cycles by almost 90%. By integrating disparate proprietary databases into a unified knowledge graph, researchers can now query complex information much faster.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This shows a powerful, practical application of AI in a critical field, leading to faster innovation and potentially life-saving treatments.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://www.artificialintelligence-news.com/news/insilico-medicine-advances-ai-drug-for-ipf-to-phase-iii-trials/">Insilico Medicine advances AI drug for IPF to Phase III trials</a></h3>
+<p>Insilico Medicine is moving a drug identified by AI for idiopathic pulmonary fibrosis (IPF) into Phase III human trials. This marks a significant milestone for AI-driven drug discovery, as it's one of the first AI-designed medicines to reach such an advanced stage of testing.</p>
+<p class="why"><strong>💡 Why it matters:</strong> Reaching Phase III trials provides crucial empirical validation for the entire computational drug discovery sector.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://www.artificialintelligence-news.com/news/shrink-token-budget-not-team/">How to shrink the token budget without shrinking the team</a></h3>
+<p>Nvidia CEO Jensen Huang highlighted the growing importance of managing AI token consumption, suggesting engineers' token spend should ideally be less than half their salary. The article discusses strategies for optimizing LLM usage to reduce costs without sacrificing productivity.</p>
+<p class="why"><strong>💡 Why it matters:</strong> As AI becomes more integrated into workflows, cost-efficiency and smart resource management are becoming key for businesses.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://www.iroh.computer/blog/mesh-llm/">Mesh LLM: distributed AI computing on iroh</a></h3>
+<p>A new project, Mesh LLM, explores distributed AI computing using iroh, a peer-to-peer data transfer protocol. The goal is to enable LLMs to run across a network of devices, potentially decentralizing AI processing and making it more resilient.</p>
+<p class="why"><strong>💡 Why it matters:</strong> Decentralized AI could lead to more robust, private, and accessible AI systems, moving beyond reliance on centralized cloud providers.</p>
+</div>
+</section>
+
+<section id="research">
+<h2>Research Highlights</h2>
+<h3><a href="https://tldr.takara.ai/p/2607.06306">UI2App: Benchmarking Visual Interaction Inference in Executable Web Application Generation</a></h3>
+<p>This paper introduces a new benchmark for generating functional web applications directly from visual inputs, moving beyond text-based prompts. It's about letting AI understand a visual design and turn it into working code.</p>
+<h3><a href="https://tldr.takara.ai/p/2607.06963">Large Language Models (LLMs) and Generative AI in Cybersecurity and Privacy: A Survey of Dual-Use Risks, AI-Generated Malware, Explainability, and Defensive Strategies</a></h3>
+<p>This survey explores the double-edged sword of LLMs in cybersecurity, covering how they can be used for both sophisticated attacks (like generating malware) and for defense, as well as the privacy implications.</p>
+<h3><a href="https://tldr.takara.ai/p/2607.04505">Why Pure Reasoning is Not Enough: Nature as the Source of Mathematical Innovation</a></h3>
+<p>This paper argues that human mathematical thinking isn't just about pure logic, but heavily relies on pattern matching from the real world. This suggests that AI systems might also need to look beyond pure deduction to achieve truly innovative reasoning.</p>
+</section>
+
+<section id="quick-hits">
+<h2>Quick Hits</h2>
+<ul>
+<li><a href="https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547">What xAI's Grok Build CLI Actually Sends to xAI</a>: A developer investigated what data xAI's Grok Build CLI sends back to the company, raising questions about transparency.</li>
+<li><a href="https://www.artificialintelligence-news.com/news/nhs-ai-blood-test-womb-cancer-checks/">NHS AI blood test could reduce invasive womb cancer checks</a>: Several UK hospitals are preparing to use an AI-powered blood test to screen for womb cancer, potentially making diagnostic processes less invasive.</li>
+<li><a href="https://www.artificialintelligence-news.com/news/ai-product-development-loreal-mondelez-nestle/">L\u2019Oreal, Mondelez, and Nestle use AI to speed product development</a>: Big consumer brands are leveraging AI in their labs to shorten development cycles and find new uses for existing ingredients.</li>
+<li><a href="https://thebeach.dev/posts/lisp-agent/">An agent in 100 lines of Lisp</a>: A fun project shows how to build a basic AI agent in a surprisingly small amount of Lisp code.</li>
+<li><a href="https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/">Fixed three bugs that made Qwen3.5-122B a daily driver on Mac Studio</a>: A user details fixes that significantly improved the performance and stability of running a large language model locally on a Mac Studio.</li>
+<li><a href="https://www.bbc.com/news/articles/c9q29j47v9ro">Wealthy AI workers send San Francisco house prices soaring</a>: The influx of high-earning AI professionals is reportedly contributing to a significant rise in housing costs in San Francisco.</li>
+</ul>
+</section>
+
+<section id="footer">
+See you next Sunday ✌️
+</section>
+        </div>
+        <div class="footer-section">
+            Built by a curious human and a few neural networks 🔗
+            <div style="margin-top: 8px; font-size: 11px; color: #d1d5db;">
+                ⚠️ AI can make mistakes — please double-check important information.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
