@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Week in AI — Jul 19, 2026</title>
+    <!-- Back link -->
+    <style>
+        .back-bar {
+            background: #1a1612;
+            padding: 12px 24px;
+            text-align: center;
+        }
+        .back-bar a {
+            color: #e8531a;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-bar a:hover { text-decoration: underline; }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f9fafb;
+            color: #111827;
+            padding: 32px 16px;
+        }
+        .wrapper {
+            max-width: 660px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+        .banner {
+            background: #111827;
+            color: #ffffff;
+            padding: 28px 24px;
+        }
+        .banner h1 {
+            font-size: clamp(20px, 5vw, 26px);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .banner .date {
+            font-size: clamp(12px, 3vw, 14px);
+            color: #9ca3af;
+            margin-top: 4px;
+        }
+        .content { padding: 28px 24px; }
+        section { margin-bottom: 36px; }
+        section h2 {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #6b7280;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        section h3 {
+            font-size: clamp(16px, 4vw, 17px);
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        section h3 a { color: #111827; text-decoration: none; }
+        section h3 a:hover { text-decoration: underline; }
+        p {
+            font-size: clamp(15px, 3.5vw, 16px);
+            line-height: 1.7;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+        p.why {
+            font-size: clamp(14px, 3.2vw, 15px);
+            color: #6b7280;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-top: 8px;
+            border-top: 1px dashed #e5e7eb;
+        }
+        .story {
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .story:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        ul { list-style: none; padding: 0; }
+        ul li {
+            font-size: clamp(14px, 3.5vw, 15px);
+            line-height: 1.7;
+            color: #374151;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        ul li:last-child { border-bottom: none; }
+        ul li a { color: #2563eb; text-decoration: none; font-weight: 600; }
+        ul li a:hover { text-decoration: underline; }
+        .footer-section {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 20px 24px;
+            font-size: clamp(12px, 3vw, 13px);
+            color: #9ca3af;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            body { padding: 0; }
+            .wrapper { border-radius: 0; }
+            .banner { padding: 20px 16px; }
+            .content { padding: 20px 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="back-bar">
+        <a href="../index.html">← Back to This Week in AI</a>
+    </div>
+    <div class="wrapper">
+        <div class="banner">
+            <h1>🤖 This Week in AI</h1>
+            <div class="date">Jul 19, 2026</div>
+        </div>
+        <div class="content">
+            <section id="intro">
+This week, AI showed off both its surprising problem-solving chops and a growing focus on internal safety mechanisms. It was a mix of unexpected capabilities and a serious look at how to control increasingly powerful models. We saw an impressive mathematical breakthrough from an LLM and new tools designed to make these systems more secure, alongside real-world regulatory responses and analyses of AI's impact on human endeavors.
+</section>
+
+<section id="top-stories">
+<div class="story">
+<h3><a href="https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/">GPT-5.6 used a prompt to close a 30-year gap in convex optimization</a></h3>
+<p>OpenAI's latest model, GPT-5.6, reportedly solved a long-standing problem in convex optimization, a feat that had eluded researchers for three decades. The breakthrough came after a specific prompt was given to the model, demonstrating its ability to contribute to complex mathematical proofs.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This shows LLMs aren't just for text generation; they're starting to make significant contributions to fundamental scientific and mathematical research.</p>
+</div>
+<div class="story">
+<h3><a href="https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/">Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer</a></h3>
+<p>OpenAI has developed GPT-Red, an internal "super-hacker" LLM designed to find vulnerabilities and weaknesses in its other models. GPT-Red acts as a sparring partner, helping to harden OpenAI's flagship models, including the recently released GPT-5.6, against potential cyberattacks and misuse.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This highlights a proactive approach to AI safety, using AI itself to red-team and improve the security of other AI systems.</p>
+</div>
+<div class="story">
+<h3><a href="https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties/">Mayor Mamdani Says Landlords Can't Use AI Images to Advertise</a></h3>
+<p>Mayor Mamdani announced new regulations prohibiting landlords from using AI-generated images in property advertisements without disclosure. The move aims to combat deceptive practices where AI-created visuals might misrepresent property conditions or features, ensuring transparency for renters.</p>
+<p class="why"><strong>💡 Why it matters:</strong> It's a clear example of local governments stepping in to regulate the practical and ethical use of AI in everyday commercial activities.</p>
+</div>
+<div class="story">
+<h3><a href="https://data.stackexchange.com/stackoverflow/query/1953768#graph">What AI did to stackoverflow in a graph</a></h3>
+<p>A new graph query on Stack Exchange visualizes the significant impact of AI on Stack Overflow, likely showing changes in user activity, question types, or answer quality. It suggests a measurable shift in how developers interact with the platform in the age of AI assistance.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This data-driven view offers a stark look at how AI is reshaping fundamental resources and communities for software developers.</p>
+</div>
+<div class="story">
+<h3><a href="https://www.artificialintelligence-news.com/news/neko-health-700m-ai-body-scans-us/">Neko Health raises $700 million to expand AI body scans in the US</a></h3>
+<p>Neko Health secured a massive $700 million Series C funding round to bring its AI-powered preventive body scanning service to the United States, starting with a clinic in New York. The company combines medical imaging, proprietary sensors, and AI analysis for early health detection.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This huge investment signals strong investor confidence in AI's role in preventive healthcare and personalized diagnostics.</p>
+</div>
+</section>
+
+<section id="research">
+<h3><a href="https://tldr.takara.ai/p/2607.10750">Filtering Harmful Actions Isn't Enough: Phantom Transfer in Agentic SDF</a></h3>
+This paper explores how training agentic AI models with synthetic data can lead to unintended "phantom transfer" of harmful behaviors, even if explicit harmful actions are filtered out. It's a heads-up for anyone building AI agents: simply removing bad examples isn't enough to guarantee safety.
+<h3><a href="https://tldr.takara.ai/p/2607.10826">3D-DefectBench: A Controlled Factorial Study of Vision-Language Model Evaluation Pipelines for Fine-Grained 3D Generation Defects</a></h3>
+If you're working with generative 3D systems, this paper is for you. It looks at how to reliably evaluate the quality of 3D models generated by AI, examining the entire pipeline from rendering to the VLM itself, which is crucial for scaling up 3D content creation.
+<h3><a href="https://tldr.takara.ai/p/2607.13931">SIVA-RL: Sensitivity-Invariance Visual Alignment for Multimodal Reinforcement Learning</a></h3>
+This research focuses on making multimodal AI models (like those that process both images and text) more trustworthy by ensuring they actually use visual evidence for their decisions, not just answer-level correctness. It's about getting AI to truly "see" what it's talking about in RL systems.
+</section>
+
+<section id="quick-hits">
+<ul>
+<li><a href="https://calculus.academa.ai/">LLM-Integrated Multivariable Calculus Course</a> is launching, showing how AI is integrating directly into higher education curricula.</li>
+<li>A blog post pitted <a href="https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/">Fable 5 against GPT-5.6 Sol on an NP-Hard Problem</a>, exploring if specific prompting strategies like `/goal` improve performance.</li>
+<li>A step-by-step guide was shared on <a href="https://ykdojo.github.io/claude-controls-mac/">setting up your spare Mac for Claude Code to control</a>, highlighting practical applications of agentic AI.</li>
+<li>A thought-provoking piece argued that <a href="https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/#fnref:3">AI Mania Is Eviscerating Global Decision-Making</a>, offering a critical perspective on the current AI landscape.</li>
+<li><a href="https://deepmind.google/blog/our-approach-to-bioresilience/">Isomorphic Labs and Google DeepMind outlined their approach to bioresilience</a>, focusing on curbing AI misuse in biology and aiding outbreak response.</li>
+<li><a href="https://www.artificialintelligence-news.com/news/nokia-ai-ran-platform-nvidia/">Nokia's AI-RAN platform</a>, built with NVIDIA, claims to be the industry's first to let operators get more capacity from existing spectrum.</li>
+</ul>
+</section>
+
+<section id="footer">
+See you next Sunday ✌️
+</section>
+        </div>
+        <div class="footer-section">
+            Built by a curious human and a few neural networks 🔗
+            <div style="margin-top: 8px; font-size: 11px; color: #d1d5db;">
+                ⚠️ AI can make mistakes — please double-check important information.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
