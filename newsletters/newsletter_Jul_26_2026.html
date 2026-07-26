@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Week in AI — Jul 26, 2026</title>
+    <!-- Back link -->
+    <style>
+        .back-bar {
+            background: #1a1612;
+            padding: 12px 24px;
+            text-align: center;
+        }
+        .back-bar a {
+            color: #e8531a;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-bar a:hover { text-decoration: underline; }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f9fafb;
+            color: #111827;
+            padding: 32px 16px;
+        }
+        .wrapper {
+            max-width: 660px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+        .banner {
+            background: #111827;
+            color: #ffffff;
+            padding: 28px 24px;
+        }
+        .banner h1 {
+            font-size: clamp(20px, 5vw, 26px);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .banner .date {
+            font-size: clamp(12px, 3vw, 14px);
+            color: #9ca3af;
+            margin-top: 4px;
+        }
+        .content { padding: 28px 24px; }
+        section { margin-bottom: 36px; }
+        section h2 {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #6b7280;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        section h3 {
+            font-size: clamp(16px, 4vw, 17px);
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        section h3 a { color: #111827; text-decoration: none; }
+        section h3 a:hover { text-decoration: underline; }
+        p {
+            font-size: clamp(15px, 3.5vw, 16px);
+            line-height: 1.7;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+        p.why {
+            font-size: clamp(14px, 3.2vw, 15px);
+            color: #6b7280;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-top: 8px;
+            border-top: 1px dashed #e5e7eb;
+        }
+        .story {
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .story:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        ul { list-style: none; padding: 0; }
+        ul li {
+            font-size: clamp(14px, 3.5vw, 15px);
+            line-height: 1.7;
+            color: #374151;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        ul li:last-child { border-bottom: none; }
+        ul li a { color: #2563eb; text-decoration: none; font-weight: 600; }
+        ul li a:hover { text-decoration: underline; }
+        .footer-section {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 20px 24px;
+            font-size: clamp(12px, 3vw, 13px);
+            color: #9ca3af;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            body { padding: 0; }
+            .wrapper { border-radius: 0; }
+            .banner { padding: 20px 16px; }
+            .content { padding: 20px 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="back-bar">
+        <a href="../index.html">← Back to This Week in AI</a>
+    </div>
+    <div class="wrapper">
+        <div class="banner">
+            <h1>🤖 This Week in AI</h1>
+            <div class="date">Jul 26, 2026</div>
+        </div>
+        <div class="content">
+            <section id="intro">
+The AI world this week felt a distinct shift towards practical application and the maturation of open-weight models. It's becoming less about raw power and more about how these powerful tools can be efficiently deployed and integrated into existing systems, from cloud infrastructure to tiny microcontrollers. We're seeing more focus on context, ethics, and real-world impact across various sectors.
+</section>
+
+<section id="top-stories">
+<div class="story">
+<h3><a href="https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/">Open-weight AI is having its Kubernetes moment</a></h3>
+<p>This piece argues that open-weight AI models are reaching a critical point of maturity, similar to how Kubernetes standardized container orchestration. It suggests that the ecosystem around these models is now robust enough for widespread adoption and development.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This isn't just about open source; it's about the industrialization and mainstream integration of flexible, accessible AI models.</p>
+</div>
+<div class="story">
+<h3><a href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models">The new rules of context engineering for Claude 5 generation models</a></h3>
+<p>Anthropic released new guidelines for effectively using the massive context windows available in their latest Claude 5 models. It emphasizes structuring prompts and information to maximize the model's ability to reason over long inputs, moving beyond simple concatenation.</p>
+<p class="why"><strong>💡 Why it matters:</strong> As context windows grow, understanding how to engineer prompts for them becomes a crucial skill for developers and product designers.</p>
+</div>
+<div class="story">
+<h3><a href="https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines/">How AI helps scientists design the next generation of medicines</a></h3>
+<p>AI is increasingly being used as a co-pilot in the challenging and expensive process of drug discovery and development. By analyzing vast datasets and simulating molecular interactions, AI can help scientists identify promising new drug candidates much faster than traditional methods.</p>
+<p class="why"><strong>💡 Why it matters:</strong> AI is proving to be a powerful tool for accelerating scientific discovery, with tangible benefits for human health.</p>
+</div>
+<div class="story">
+<h3><a href="https://blog.cloudflare.com/content-independence-day-ai-options/">Cloudflare's new AI traffic options for customers</a></h3>
+<p>Cloudflare introduced new tools and configurations specifically designed for managing AI-related internet traffic. This includes optimizing performance, enhancing security, and offering more control over how AI services interact with their global network.</p>
+<p class="why"><strong>💡 Why it matters:</strong> Infrastructure providers are adapting to the unique demands of AI, making it easier and more secure for companies to deploy and scale AI applications.</p>
+</div>
+<div class="story">
+<h3><a href="https://github.com/slvDev/esp32-ai">Running a 28.9M parameter LLM on an $8 microcontroller</a></h3>
+<p>Someone managed to get a relatively small, but still capable, language model running on an incredibly cheap ESP32 microcontroller. This project demonstrates impressive optimizations for memory and computation, pushing the boundaries of edge AI.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This is genuinely surprising and opens up possibilities for embedding sophisticated AI capabilities into low-cost, low-power devices.</p>
+</div>
+</section>
+
+<section id="research">
+<h3><a href="https://tldr.takara.ai/p/2607.18443">Computational models of pragmatic reasoning with flexible generation of meaning and expression alternatives</a></h3>
+<p>This paper explores how AI models can better understand and generate language by considering alternative meanings and expressions, much like humans do when inferring intent. It's about teaching AI to "read between the lines" and choose words more thoughtfully.</p>
+<h3><a href="https://tldr.takara.ai/p/2607.21203">A New Well-Supported Semantics for Description Logic Programs</a></h3>
+<p>This research proposes an improved way to combine rule-based programming with ontologies (structured knowledge bases). It aims to ensure that complex AI systems relying on both rules and factual knowledge can reason consistently without getting stuck in logical loops.</p>
+<h3><a href="https://tldr.takara.ai/p/2607.20902">Anti-Goal Reasoning: Rethinking the Theory of Goal Reasoning in Non-Axiomatic Logic</a></h3>
+<p>This paper delves into how AI agents can be designed to understand and actively avoid certain outcomes, rather than just pursuing positive goals. It's crucial for building safer and more robust autonomous systems that know not just what to do, but what not to do.</p>
+</section>
+
+<section id="quick-hits">
+<ul>
+<li><a href="https://www.law.uchicago.edu/news/ai-strategy-statement">Rethinking Legal Education</a>: The University of Chicago Law School is outlining its strategy for incorporating AI into legal education and practice.</li>
+<li><a href="https://www.debian.org/vote/2026/vote_002">LLM Usage in Debian</a>: Debian, a major open-source operating system, is considering three proposals for how to integrate LLMs into its ecosystem.</li>
+<li><a href="https://www.technologyreview.com/2026/07/23/1140753/the-download-energy-transmission-and-us-threats-chinese-ai/">US Threats Against Chinese AI</a>: Reports indicate ongoing US efforts to limit China's access to advanced AI technologies and chips.</li>
+</ul>
+</section>
+
+<section id="footer">
+That's all for this week! See you next Sunday ✌️
+</section>
+        </div>
+        <div class="footer-section">
+            Built by a curious human and a few neural networks 🔗
+            <div style="margin-top: 8px; font-size: 11px; color: #d1d5db;">
+                ⚠️ AI can make mistakes — please double-check important information.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
