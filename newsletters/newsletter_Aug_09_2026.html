@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Week in AI — Aug 09, 2026</title>
+    <!-- Back link -->
+    <style>
+        .back-bar {
+            background: #1a1612;
+            padding: 12px 24px;
+            text-align: center;
+        }
+        .back-bar a {
+            color: #e8531a;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-bar a:hover { text-decoration: underline; }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f9fafb;
+            color: #111827;
+            padding: 32px 16px;
+        }
+        .wrapper {
+            max-width: 660px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+        .banner {
+            background: #111827;
+            color: #ffffff;
+            padding: 28px 24px;
+        }
+        .banner h1 {
+            font-size: clamp(20px, 5vw, 26px);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .banner .date {
+            font-size: clamp(12px, 3vw, 14px);
+            color: #9ca3af;
+            margin-top: 4px;
+        }
+        .content { padding: 28px 24px; }
+        section { margin-bottom: 36px; }
+        section h2 {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #6b7280;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        section h3 {
+            font-size: clamp(16px, 4vw, 17px);
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        section h3 a { color: #111827; text-decoration: none; }
+        section h3 a:hover { text-decoration: underline; }
+        p {
+            font-size: clamp(15px, 3.5vw, 16px);
+            line-height: 1.7;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+        p.why {
+            font-size: clamp(14px, 3.2vw, 15px);
+            color: #6b7280;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-top: 8px;
+            border-top: 1px dashed #e5e7eb;
+        }
+        .story {
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .story:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        ul { list-style: none; padding: 0; }
+        ul li {
+            font-size: clamp(14px, 3.5vw, 15px);
+            line-height: 1.7;
+            color: #374151;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        ul li:last-child { border-bottom: none; }
+        ul li a { color: #2563eb; text-decoration: none; font-weight: 600; }
+        ul li a:hover { text-decoration: underline; }
+        .footer-section {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 20px 24px;
+            font-size: clamp(12px, 3vw, 13px);
+            color: #9ca3af;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            body { padding: 0; }
+            .wrapper { border-radius: 0; }
+            .banner { padding: 20px 16px; }
+            .content { padding: 20px 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="back-bar">
+        <a href="../index.html">← Back to This Week in AI</a>
+    </div>
+    <div class="wrapper">
+        <div class="banner">
+            <h1>🤖 This Week in AI</h1>
+            <div class="date">Aug 09, 2026</div>
+        </div>
+        <div class="content">
+            <section id="intro">
+This week, AI showed us that even the smartest models can stumble, sometimes with unexpected real-world consequences.
+We saw an accidental clash between major AI players, a bug tracker overwhelmed by bots, and a breakthrough in weather forecasting. It was a week that highlighted both the impressive capabilities and the messy realities of AI's expanding presence.
+</section>
+
+<section id="top-stories">
+<div class="story">
+<h3><a href="https://simonwillison.net/2026/Aug/7/openai-timeline/">Timeline of the OpenAI accidental attack against Hugging Face</a></h3>
+<p>A detailed timeline emerged describing how OpenAI's models inadvertently caused a significant traffic overload on Hugging Face's services. The incident appears to have stemmed from an unexpected interaction or misconfiguration between the two platforms' systems.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This offers a rare glimpse into the potential for large AI systems to inadvertently cause problems for other platforms, even without malicious intent.</p>
+</div>
+<div class="story">
+<h3><a href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/">DeepMind's WeatherNext model achieves breakthrough forecasting cyclones</a></h3>
+<p>DeepMind announced their WeatherNext AI model has achieved a significant advance in forecasting cyclones and other extreme weather events. This model promises more accurate and timely predictions, which could save lives by improving disaster preparedness.</p>
+<p class="why"><strong>💡 Why it matters:</strong> Improved weather forecasting with AI has direct, tangible benefits for humanity, especially in the face of climate change.</p>
+</div>
+<div class="story">
+<h3><a href="https://social.treehouse.systems/@mgorny/117058483039362779">Gentoo bugzilla closed due AI bot scraper overload</a></h3>
+<p>The Gentoo Linux bug tracking system, Bugzilla, had to temporarily close down its public access due to an overwhelming amount of traffic from AI bot scrapers. This disruption impacted a key open-source development tool and its community.</p>
+<p class="why"><strong>💡 Why it matters:</strong> It's another real-world example of how unmanaged AI bot activity can negatively impact public infrastructure and community resources.</p>
+</div>
+<div class="story">
+<h3><a href="https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling/">ChatGPT starts blocking direct requests to copy an author's style</a></h3>
+<p>ChatGPT has begun to block direct prompts that explicitly ask it to replicate the exact writing style of specific famous authors. While it might still produce content with a similar 'feeling,' it's actively resisting direct style cloning requests.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This move reflects ongoing efforts by AI developers to address copyright, intellectual property, and ethical concerns around AI-generated content.</p>
+</div>
+<div class="story">
+<h3><a href="https://www.technologyreview.com/2026/08/07/1141389/the-download-censorship-conspiracy-theory-first-ai-virus/">The first virus created by AI</a></h3>
+<p>MIT Technology Review's "The Download" newsletter touched on the emergence of what's being called the "first virus created by AI." While details were scarce in the summary, it points to a concerning new frontier in cyber threats.</p>
+<p class="why"><strong>💡 Why it matters:</strong> The potential for AI to autonomously develop and deploy malware marks a significant security challenge that needs immediate attention.</p>
+</div>
+</section>
+
+<section id="research">
+<h3><a href="https://tldr.takara.ai/p/2608.05780">Evidence-Driven Dynamic Visual Selector for Efficient Long Video Understanding</a></h3>
+<p>This paper proposes a new method for AI models to efficiently understand long videos by dynamically selecting only the most relevant frames. It aims to reduce computational costs and overcome context length limitations in current multimodal large language models (MLLMs).</p>
+<h3><a href="https://tldr.takara.ai/p/2608.03581">AI-Assisted Peer Review Across Research Communities: From Reviewer AI Policies to LLM Review Quality</a></h3>
+<p>Researchers surveyed how various publication venues regulate AI use in peer review and assessed the quality of reviews generated by current AI systems. It sheds light on the capabilities and ethical considerations of AI in scientific publishing workflows.</p>
+<h3><a href="https://tldr.takara.ai/p/2608.06307">UQ-Loc: Uncertainty-Aware LiDAR Scene Coordinate Regression</a></h3>
+<p>This paper introduces a method for LiDAR-based localization that not only maps point clouds to 3D coordinates but also quantifies the uncertainty in its predictions. This helps improve robustness in real-world applications like robotics and autonomous driving.</p>
+</section>
+
+<section id="quick-hits">
+<ul>
+<li><a href="https://twitter.com/un1c0rnioz/status/2084686552299634805">Claude's clever phone trick</a>: A user lost their phone at the office and Claude suggested using Bluetooth signal strength to find it, showing practical, creative problem-solving.</li>
+<li><a href="https://code.claude.com/docs/en/cross-session-messaging">Claude Code cross-session messaging</a>: Claude Code now lets you message across different sessions, making it easier for developers to manage complex projects.</li>
+<li><a href="https://www.technologyreview.com/2026/08/06/1141278/the-download-google-ai-shake-up-meta-rogue-model/">Google’s AI empire reshaped</a>: Google is reportedly undergoing a significant internal shake-up in its AI division after talent losses and model delays.</li>
+<li><a href="https://www.technologyreview.com/2026/08/06/1141278/the-download-google-ai-shake-up-meta-rogue-model/">Meta’s rogue model</a>: A quick hit mentions Meta dealing with a "rogue model," hinting at internal challenges or unexpected behavior from their AI.</li>
+<li><a href="https://www.technologyreview.com/2026/08/04/1141098/the-download-robot-restrictions-ice-dna/">US robot restrictions</a>: Trump's administration is reportedly extending AI protectionism policies to the robotics sector, impacting international collaboration and trade.</li>
+</ul>
+</section>
+
+<section id="footer">
+See you next Sunday ✌️
+</section>
+        </div>
+        <div class="footer-section">
+            Built by a curious human and a few neural networks 🔗
+            <div style="margin-top: 8px; font-size: 11px; color: #d1d5db;">
+                ⚠️ AI can make mistakes — please double-check important information.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
