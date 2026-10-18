@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Week in AI — Oct 18, 2026</title>
+    <!-- Back link -->
+    <style>
+        .back-bar {
+            background: #1a1612;
+            padding: 12px 24px;
+            text-align: center;
+        }
+        .back-bar a {
+            color: #e8531a;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-bar a:hover { text-decoration: underline; }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f9fafb;
+            color: #111827;
+            padding: 32px 16px;
+        }
+        .wrapper {
+            max-width: 660px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+        .banner {
+            background: #111827;
+            color: #ffffff;
+            padding: 28px 24px;
+        }
+        .banner h1 {
+            font-size: clamp(20px, 5vw, 26px);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .banner .date {
+            font-size: clamp(12px, 3vw, 14px);
+            color: #9ca3af;
+            margin-top: 4px;
+        }
+        .content { padding: 28px 24px; }
+        section { margin-bottom: 36px; }
+        section h2 {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #6b7280;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        section h3 {
+            font-size: clamp(16px, 4vw, 17px);
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        section h3 a { color: #111827; text-decoration: none; }
+        section h3 a:hover { text-decoration: underline; }
+        p {
+            font-size: clamp(15px, 3.5vw, 16px);
+            line-height: 1.7;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+        p.why {
+            font-size: clamp(14px, 3.2vw, 15px);
+            color: #6b7280;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-top: 8px;
+            border-top: 1px dashed #e5e7eb;
+        }
+        .story {
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .story:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        ul { list-style: none; padding: 0; }
+        ul li {
+            font-size: clamp(14px, 3.5vw, 15px);
+            line-height: 1.7;
+            color: #374151;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        ul li:last-child { border-bottom: none; }
+        ul li a { color: #2563eb; text-decoration: none; font-weight: 600; }
+        ul li a:hover { text-decoration: underline; }
+        .footer-section {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 20px 24px;
+            font-size: clamp(12px, 3vw, 13px);
+            color: #9ca3af;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            body { padding: 0; }
+            .wrapper { border-radius: 0; }
+            .banner { padding: 20px 16px; }
+            .content { padding: 20px 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="back-bar">
+        <a href="../index.html">← Back to This Week in AI</a>
+    </div>
+    <div class="wrapper">
+        <div class="banner">
+            <h1>🤖 This Week in AI</h1>
+            <div class="date">Oct 18, 2026</div>
+        </div>
+        <div class="content">
+            <section id="intro">
+This week, AI models showed a curious knack for digging into the foundations of existing systems. It wasn't about flashy new models, but rather a deeper look at what AI can reveal, from cryptographic origins to the very nature of intelligence itself. We also saw some practical tools for developers looking to build better, faster AI applications.
+</section>
+
+<section id="top-stories">
+<div class="story">
+<h3><a href="https://www.anthropic.com/research/ecdsa-curve-origins">Claude reveals ECDSA curve origins</a></h3>
+<p>Anthropic's Claude 3.5 Sonnet, when prompted to reverse-engineer cryptographic curves, surprisingly identified the exact origins of an ECDSA curve from a specific academic paper. This was a notable discovery, as the curve's origin was not publicly documented.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This highlights an unexpected capability of large language models to uncover hidden information and potentially reveal sensitive data within complex systems.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/">A Conversation With the Creator of AI-Designed Viruses</a></h3>
+<p>Samuel King, a Stanford PhD student, used generative AI to propose genetic blueprints for microscopic viruses. While not yet AI-generated life, it signals a significant step towards AI's potential in designing new biological entities.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This work raises profound ethical questions about AI's role in synthetic biology and its potential for both medical breakthroughs and misuse.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://alexwang.ai/posts/associative-memory/">You could have invented transformers from memory</a></h3>
+<p>An article breaks down the core concepts behind transformer architectures, arguing that their fundamental idea of associative memory could have been derived intuitively. It simplifies the complex mechanism into relatable terms.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This piece offers a fresh perspective on a foundational AI architecture, making it more accessible and potentially inspiring new approaches to neural network design.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://llmspeed.dev/">Llmspeed – feel how fast a local LLM runs before you buy the hardware</a></h3>
+<p>A new tool, Llmspeed, lets developers test the performance of various local LLMs on different hardware configurations without needing to purchase the actual hardware first. It provides a practical way to benchmark and plan local AI deployments.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This is a practical resource for developers and businesses looking to optimize their local AI infrastructure and make informed hardware purchasing decisions.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://tldr.takara.ai/p/2610.18766">Rubrics from the Task, Verdicts from Evidence: Pointwise Rubric Rewards with Tool-Augmented Judges</a></h3>
+<p>This paper introduces a method for creating more robust rubric-based reward models (RMs) for AI, by deriving criteria directly from tasks and using tool-augmented judges to reduce bias. It aims to improve how AI models are evaluated and trained.</p>
+<p class="why"><strong>💡 Why it matters:</strong> Better reward models are crucial for training more capable and aligned AI systems, moving beyond simple accuracy to nuanced, criteria-based evaluations.</p>
+</div>
+</section>
+
+<section id="research">
+<h3><a href="https://tldr.takara.ai/p/2610.19559">Learning Visual Speech Representations via Cross-Modal Distillation and Joint Face-Lip Modeling</a></h3>
+<p>This paper introduces FLARE, a framework to improve lipreading by combining visual and auditory information, making it more robust to challenges like head pose and video quality. It's about making AI better at understanding speech from just watching someone's lips.</p>
+
+<h3><a href="https://tldr.takara.ai/p/2610.19065">Revisiting Generative vs. Dense Retrieval: A Static Value Prior Reverses the Gap</a></h3>
+<p>This research explores the differences between generative and dense retrieval methods in sequential recommendation systems. It finds that adding a "static value prior" can significantly improve generative retrieval, making it competitive with traditional dense methods.</p>
+
+<h3><a href="https://tldr.takara.ai/p/2610.19051">Smart Alone, Blind Together: Why Accuracy Fails to Certify Theory of Mind in Multi-Agent Teams</a></h3>
+<p>This paper argues that simply measuring accuracy isn't enough to certify if AI coordinators truly understand their teammates' intentions in multi-agent systems. It suggests that the "bar" for understanding should be set by the cost of wrong actions, not just inference accuracy.</p>
+</section>
+
+<section id="quick-hits">
+<ul>
+<li><a href="https://sphinx-six-theta.vercel.app/">Sphinx – A hook that quizzes you on your AI's code before shipping</a>: This tool adds a pre-commit hook to quiz you on your AI's code, helping developers catch issues before deployment.</li>
+<li><a href="https://pele.run/">Pele – Mermaid diagrams as themeable SVG</a>: Pele offers a way to generate themeable SVG images from Mermaid diagrams, useful for documentation and visual explanations.</li>
+<li><a href="https://www.cs.cmu.edu/news/2026/microsoft-cmu-praise">Microsoft and CMU team up to train early career software engineers</a>: A new collaboration aims to develop a skilled workforce for the evolving tech landscape, focusing on practical engineering skills.</li>
+<li><a href="https://newsletter.danielpaleka.com/p/the-math-that-openai-keeps-for-itself">The math that OpenAI keeps for itself</a>: An interesting piece speculating on the proprietary mathematical advancements OpenAI might be leveraging in its closed models.</li>
+</ul>
+</section>
+
+<section id="footer">
+See you next Sunday ✌️
+</section>
+        </div>
+        <div class="footer-section">
+            Built by a curious human and a few neural networks 🔗
+            <div style="margin-top: 8px; font-size: 11px; color: #d1d5db;">
+                ⚠️ AI can make mistakes — please double-check important information.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
