@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Week in AI — Nov 08, 2026</title>
+    <!-- Back link -->
+    <style>
+        .back-bar {
+            background: #1a1612;
+            padding: 12px 24px;
+            text-align: center;
+        }
+        .back-bar a {
+            color: #e8531a;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-bar a:hover { text-decoration: underline; }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f9fafb;
+            color: #111827;
+            padding: 32px 16px;
+        }
+        .wrapper {
+            max-width: 660px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+        .banner {
+            background: #111827;
+            color: #ffffff;
+            padding: 28px 24px;
+        }
+        .banner h1 {
+            font-size: clamp(20px, 5vw, 26px);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .banner .date {
+            font-size: clamp(12px, 3vw, 14px);
+            color: #9ca3af;
+            margin-top: 4px;
+        }
+        .content { padding: 28px 24px; }
+        section { margin-bottom: 36px; }
+        section h2 {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #6b7280;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        section h3 {
+            font-size: clamp(16px, 4vw, 17px);
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        section h3 a { color: #111827; text-decoration: none; }
+        section h3 a:hover { text-decoration: underline; }
+        p {
+            font-size: clamp(15px, 3.5vw, 16px);
+            line-height: 1.7;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+        p.why {
+            font-size: clamp(14px, 3.2vw, 15px);
+            color: #6b7280;
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-top: 8px;
+            border-top: 1px dashed #e5e7eb;
+        }
+        .story {
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .story:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        ul { list-style: none; padding: 0; }
+        ul li {
+            font-size: clamp(14px, 3.5vw, 15px);
+            line-height: 1.7;
+            color: #374151;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        ul li:last-child { border-bottom: none; }
+        ul li a { color: #2563eb; text-decoration: none; font-weight: 600; }
+        ul li a:hover { text-decoration: underline; }
+        .footer-section {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 20px 24px;
+            font-size: clamp(12px, 3vw, 13px);
+            color: #9ca3af;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            body { padding: 0; }
+            .wrapper { border-radius: 0; }
+            .banner { padding: 20px 16px; }
+            .content { padding: 20px 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="back-bar">
+        <a href="../index.html">← Back to This Week in AI</a>
+    </div>
+    <div class="wrapper">
+        <div class="banner">
+            <h1>🤖 This Week in AI</h1>
+            <div class="date">Nov 08, 2026</div>
+        </div>
+        <div class="content">
+            <section id="intro">
+The AI world got a reality check this week, reminding us that with great power comes great responsibility – and some serious security headaches. It was a mixed bag, with a major coding agent exposing user secrets and a significant research group closing its doors, while other parts of the industry pushed forward with practical applications and new ethical debates.
+</section>
+
+<section id="top-stories">
+<h2>Top Stories</h2>
+
+<div class="story">
+<h3><a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again">Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files</a></h3>
+<p>A security analysis revealed that Claude Code, an AI coding agent, inadvertently leaked sensitive information like API keys and passwords from over a thousand public GitHub repositories. This happened because the agent's "Don't Ask Again" feature, meant to prevent repetitive questions, stored potentially secret data in publicly accessible logs.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This is a stark reminder of the serious security risks when integrating AI agents into development workflows, highlighting the need for robust secret management.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://hunch.net/?p=13764006">The end of Microsoft Research's AI Frontiers group</a></h3>
+<p>Microsoft Research has quietly dissolved its AI Frontiers group, a multidisciplinary team focused on cutting-edge AI research. While details are scarce, this move signals a potential shift in Microsoft's long-term AI strategy, possibly towards more integrated product development.</p>
+<p class="why"><strong>💡 Why it matters:</strong> The closure of a prominent research group at a major tech company could indicate a broader trend in how big players approach fundamental AI research.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/">I watched a humanoid robot clean my apartment. It felt like a taste of the future.</a></h3>
+<p>An MIT Tech Review writer experienced a new service where a humanoid robot, specifically a Unitree H1, came to their apartment to clean. While not perfect, the experience offered a glimpse into a future where general-purpose robots might handle household chores.</p>
+<p class="why"><strong>💡 Why it matters:</strong> This isn't just a prototype; it's a real-world deployment offering a tangible, if early, look at AI-powered robotics entering our daily lives.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F">Consumer brain wave headsets threaten privacy</a></h3>
+<p>A Science.org report highlighted concerns that wearable brain wave devices are harvesting user neural data to train AI models, often without explicit consent or clear privacy policies. This raises questions about who owns our brain data and how it's being used.</p>
+<p class="why"><strong>💡 Why it matters:</strong> As AI moves closer to our minds, the intersection of neurotechnology and data privacy becomes a critical ethical and regulatory challenge.</p>
+</div>
+
+<div class="story">
+<h3><a href="https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/">Texas was the new epicenter of the AI data center buildout. That might be kaput.</a></h3>
+<p>Texas, once a booming hub for AI data center construction, is facing an uncertain future due to recent shifts in its energy policy and political landscape. This could jeopardize its position as a go-to location for major tech companies' AI infrastructure.</p>
+<p class="why"><strong>💡 Why it matters:</strong> The political and energy environment profoundly impacts the physical infrastructure needed for AI, potentially slowing growth in key regions.</p>
+</div>
+</section>
+
+<section id="research">
+<h2>Research Corner</h2>
+
+<h3><a href="https://tldr.takara.ai/p/2611.03040">VERS: Steering Reasoning Models by Editing Their Activation Explanations</a></h3>
+<p>This paper introduces a way to "steer" what a language model thinks by editing the natural language explanations of its internal activations. Essentially, you can tell the model what to focus on or ignore, even mid-thought, without directly changing its output.</p>
+
+<h3><a href="https://tldr.takara.ai/p/2611.02605">StateFence: Task-State Protection Against Evidence-Chain Contamination in Blue-Team LLM Agents</a></h3>
+<p>This research addresses a critical security vulnerability for LLM agents used in cybersecurity operations: indirect prompt injection. It proposes a defense mechanism, "StateFence," to protect these agents from malicious instructions hidden in data like telemetry or incident reports.</p>
+
+<h3><a href="https://tldr.takara.ai/p/2611.02526">INTERACT: Learning Interaction-Aware World Dynamics from Driving Videos for Autonomous Driving</a></h3>
+<p>This paper introduces a new model for autonomous driving that helps vehicles predict how other cars and road users will move, not just based on the current scene, but also by understanding how they'll react to the autonomous vehicle's own actions.</p>
+</section>
+
+<section id="quick-hits">
+<h2>Quick Hits</h2>
+<ul>
+<li><a href="https://caleb.software/posts/claude-to-pi.html">Goodbye Claude, Hello Pi</a>: A developer shares their positive experience switching from Claude to Inflection AI's Pi for conversational tasks.</li>
+<li><a href="https://www.anthropic.com/research/components-of-agent-memory">The Components of Agent Memory</a>: Anthropic researchers detail the different types of memory an AI agent needs to function effectively and retain information over time.</li>
+<li><a href="https://www.technologyreview.com/2026/11/06/1148154/the-download-humanoid-robot-cleaner-samsung-ai-chip-boom/">Samsung builds for the AI boom</a>: Samsung is reportedly ramping up its chip manufacturing capabilities to meet the surging demand driven by AI development.</li>
+<li><a href="https://www.technologyreview.com/2026/11/04/1148049/roundtables-inside-the-quest-for-cognitive-immortality/">Inside the Quest for Cognitive Immortality</a>: MIT Tech Review hosted a discussion on the ambitious and ethical challenges of achieving cognitive continuity beyond death with AI.</li>
+<li><a href="https://mceglowski.substack.com/p/how-long-can-life-wait">How Long Can Life Wait?</a>: An article explores the philosophical implications of AI and the future of humanity, pondering our place in an increasingly intelligent world.</li>
+</ul>
+</section>
+
+<section id="footer">
+See you next Sunday ✌️
+</section>
+        </div>
+        <div class="footer-section">
+            Built by a curious human and a few neural networks 🔗
+            <div style="margin-top: 8px; font-size: 11px; color: #d1d5db;">
+                ⚠️ AI can make mistakes — please double-check important information.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
